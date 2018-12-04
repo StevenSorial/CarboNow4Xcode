@@ -1,0 +1,6 @@
+framework module Pods_CarboNow4Xcode {
+  umbrella header "Pods-CarboNow4Xcode-umbrella.h"
+
+  export *
+  module * { export * }
+}

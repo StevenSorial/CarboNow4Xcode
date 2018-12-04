@@ -1,0 +1,34 @@
+excluded:
+  - Pods
+disabled_rules:
+  - superfluous_disable_command
+opt_in_rules:
+  - closure_end_indentation
+  - array_init
+  - attributes
+  - closure_spacing
+  - collection_alignment
+  - contains_over_first_not_nil
+  - discouraged_optional_collection
+  - first_where
+  - sorted_first_last
+  - legacy_random
+  - literal_expression_end_indentation
+  - private_outlet
+  - modifier_order
+  - empty_count
+  - empty_string
+  - redundant_type_annotation
+  - toggle_bool
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - yoda_condition
+attributes:
+  always_on_same_line: []
+  always_on_line_above: []
+switch_case_alignment:
+  indented_cases: true
+line_length:
+  ignores_comments: true
+  error: 120
+reporter: "xcode"
