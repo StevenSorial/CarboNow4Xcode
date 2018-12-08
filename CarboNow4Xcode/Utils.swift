@@ -13,7 +13,7 @@ var prefs: UserDefaults {
 }
 
 let windowControlsPrefKey = "windowControls"
-let lineNumbersPrefKey = "windowControls"
+let lineNumbersPrefKey = "lineNumbers"
 
 extension Encodable {
   func toDictionary() -> [String: Any]? {
