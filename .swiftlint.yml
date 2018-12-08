@@ -3,6 +3,8 @@ excluded:
 disabled_rules:
   - superfluous_disable_command
 opt_in_rules:
+  - unused_import
+  - lower_acl_than_parent
   - closure_end_indentation
   - array_init
   - attributes
