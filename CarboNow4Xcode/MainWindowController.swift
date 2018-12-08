@@ -6,9 +6,9 @@
 //  Copyright © 2018 Steven. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
-class WindowController: NSWindowController, NSWindowDelegate {
+class MainWindowController: NSWindowController, NSWindowDelegate {
   func windowWillClose(_ notification: Notification) {
     NSApp.terminate(self)
   }
