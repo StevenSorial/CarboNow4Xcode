@@ -20,11 +20,16 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
     var code = ""
 
     for range in selectedRanges {
-      let start = range.start.line
-      let end = lines.endIndex == range.end.line ? range.end.line - 1 : range.end.line
-      let lines = Array(lines[start...end])
-      for line in lines {
-        code.append(line)
+      let startLine = range.start.line
+      let endLine = lines.endIndex == range.end.line ? range.end.line - 1 : range.end.line
+      for lineIndex in startLine...endLine {
+        let line = lines[lineIndex]
+        let isFirstLine = lineIndex == startLine
+        let isLastLine = lineIndex == endLine
+        let startColumn = isFirstLine ? line.index(line.startIndex, offsetBy: range.start.column) : line.startIndex
+        let endColumn = isLastLine ? line.index(line.startIndex, offsetBy: range.end.column) : line.endIndex
+
+        code.append(String(line[startColumn..<endColumn]))
       }
     }
 
