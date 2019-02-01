@@ -1,0 +1,6 @@
+framework module Pods_carbon_now_sh {
+  umbrella header "Pods-carbon-now-sh-umbrella.h"
+
+  export *
+  module * { export * }
+}

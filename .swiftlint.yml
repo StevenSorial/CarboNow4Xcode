@@ -2,11 +2,20 @@ excluded:
   - Pods
 disabled_rules:
   - superfluous_disable_command
+  - force_unwrapping
+  - force_cast
+  - force_try
 opt_in_rules:
-  - unused_import
-  - lower_acl_than_parent
-  - closure_end_indentation
   - array_init
+  - multiline_arguments
+  - operator_usage_whitespace
+  - redundant_nil_coalescing
+  - static_operator
+  - last_where
+  - discouraged_optional_boolean
+  - convenience_type
+  - closure_body_length
+  - closure_end_indentation
   - attributes
   - closure_spacing
   - collection_alignment
@@ -25,12 +34,17 @@ opt_in_rules:
   - trailing_closure
   - unneeded_parentheses_in_closure_argument
   - yoda_condition
+  - unused_import
+  - discouraged_object_literal
 attributes:
   always_on_same_line: []
   always_on_line_above: []
 switch_case_alignment:
   indented_cases: true
 line_length:
-  ignores_comments: true
   error: 120
+identifier_name:
+  excluded:
+    - id
+    - db
 reporter: "xcode"
