@@ -26,8 +26,8 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
         let line = lines[lineIndex]
         let isFirstLine = lineIndex == startLine
         let isLastLine = lineIndex == endLine
-        let startColumn = isFirstLine ? line.index(line.startIndex, offsetBy: range.start.column) : line.startIndex
-        let endColumn = isLastLine ? line.index(line.startIndex, offsetBy: range.end.column) : line.endIndex
+        let startColumn = isFirstLine ? String.Index(encodedOffset: range.start.column) : line.startIndex
+        let endColumn = isLastLine ? String.Index(encodedOffset: range.end.column) : line.endIndex
 
         code.append(String(line[startColumn..<endColumn]))
       }
