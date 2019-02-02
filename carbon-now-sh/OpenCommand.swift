@@ -90,7 +90,11 @@ enum CodeLanguage: String, Codable, CaseIterable {
   case javascript
   case htmlmixed
   case markdown
+  case python
   case swift
+  case perl
+  case java
+  case ruby
   case auto
   case xml
   case cpp
