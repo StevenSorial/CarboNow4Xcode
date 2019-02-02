@@ -18,8 +18,18 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
     guard !lines.isEmpty, !selectedRanges.isEmpty else { return }
 
     var allSelectionsCode = ""
+    var lastSelectionLineIndex: Int?
     for range in selectedRanges {
       var singleSelectionCode = ""
+
+      if !allSelectionsCode.isEmpty && allSelectionsCode.suffix(
+        from: allSelectionsCode.index(
+          allSelectionsCode.endIndex,
+          offsetBy: -1)
+        ) != "\n" {
+        singleSelectionCode = lastSelectionLineIndex == range.end.line ? " " : "\n"
+      }
+
       let startLine = range.start.line
       let endLine = lines.endIndex == range.end.line ? range.end.line - 1 : range.end.line
       for lineIndex in startLine...endLine {
@@ -33,6 +43,7 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
         singleSelectionCode.append(singleLineCode)
       }
       allSelectionsCode.append(singleSelectionCode)
+      lastSelectionLineIndex = range.end.line
     }
 
     guard !allSelectionsCode.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
