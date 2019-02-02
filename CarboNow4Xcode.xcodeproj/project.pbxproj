@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A93F434C0C669A631896BD3 /* Pods_CarboNow4Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EA5142E4BF193F6F00813B /* Pods_CarboNow4Xcode.framework */; };
 		B010DD9321B329E900971BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010DD9221B329E900971BA8 /* AppDelegate.swift */; };
 		B010DD9521B329E900971BA8 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010DD9421B329E900971BA8 /* PreferencesVC.swift */; };
 		B010DD9721B329EB00971BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B010DD9621B329EB00971BA8 /* Assets.xcassets */; };
@@ -81,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8C79AA301279201E9DC128 /* Pods_CarboNow4Xcode.framework in Frameworks */,
-				8A93F434C0C669A631896BD3 /* Pods_CarboNow4Xcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
