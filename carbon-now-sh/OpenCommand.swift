@@ -17,9 +17,9 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
     let selectedRanges = invocation.buffer.selections.compactMap { $0 as? XCSourceTextRange }
     guard !lines.isEmpty, !selectedRanges.isEmpty else { return }
 
-    var code = ""
-
+    var allSelectionsCode = ""
     for range in selectedRanges {
+      var singleSelectionCode = ""
       let startLine = range.start.line
       let endLine = lines.endIndex == range.end.line ? range.end.line - 1 : range.end.line
       for lineIndex in startLine...endLine {
@@ -29,13 +29,15 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
         let startColumn = isFirstLine ? String.Index(encodedOffset: range.start.column) : line.startIndex
         let endColumn = isLastLine ? String.Index(encodedOffset: range.end.column) : line.endIndex
 
-        code.append(String(line[startColumn..<endColumn]))
+        let singleLineCode = String(line[startColumn..<endColumn])
+        singleSelectionCode.append(singleLineCode)
       }
+      allSelectionsCode.append(singleSelectionCode)
     }
 
-    guard !code.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+    guard !allSelectionsCode.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
       let carbonNowDict = CarbonNow(
-        code: code,
+        code: allSelectionsCode,
         language: CodeLanguage(UTI: invocation.buffer.contentUTI),
         lineNumbers: prefs.object(forKey: lineNumbersPrefKey) as? Bool ?? false,
         windowControls: prefs.object(forKey: windowControlsPrefKey) as? Bool ?? true)
