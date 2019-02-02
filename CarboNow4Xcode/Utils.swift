@@ -7,13 +7,18 @@
 //
 import Foundation
 
-var prefs: UserDefaults {
-  return UserDefaults(
-    suiteName: "\(Bundle.main.object(forInfoDictionaryKey: "TeamIdentifierPrefix") as? String ?? "")CarboNow4Xcode")!
-}
+extension UserDefaults {
 
-let windowControlsPrefKey = "windowControls"
-let lineNumbersPrefKey = "lineNumbers"
+  static var common: UserDefaults {
+    return UserDefaults(
+      suiteName: "\(Bundle.main.object(forInfoDictionaryKey: "TeamIdentifierPrefix") as? String ?? "")CarboNow4Xcode")!
+  }
+
+  enum Keys {
+    static let windowControls = "windowControls"
+    static let lineNumbers = "lineNumbers"
+  }
+}
 
 extension Encodable {
   func toDictionary() -> [String: Any]? {
@@ -23,15 +28,5 @@ extension Encodable {
           return nil
     }
     return dictionary
-  }
-}
-
-extension Decodable {
-  init?(dict: [String: Any]) {
-    guard let dictData = try? JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted),
-      let decoded = try? JSONDecoder().decode(Self.self, from: dictData) else {
-        return nil
-    }
-    self = decoded
   }
 }

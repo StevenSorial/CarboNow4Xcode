@@ -20,6 +20,7 @@
 		B08550B221B56900009C5618 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08550B021B56900009C5618 /* Utils.swift */; };
 		B08550B421B5740F009C5618 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08550B321B5740F009C5618 /* MainWindowController.swift */; };
 		B0D4E80221B66A5B0099C435 /* PreferencesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4E80121B66A5B0099C435 /* PreferencesCommand.swift */; };
+		B0F394EE220630AA0094FB7D /* CarbonNowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F394EC2206306A0094FB7D /* CarbonNowModel.swift */; };
 		B6D8ADFEDA8F106182B322C8 /* Pods_carbon_now_sh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA548E3BAF23A0E0A66CF0D5 /* Pods_carbon_now_sh.framework */; };
 		DC8C79AA301279201E9DC128 /* Pods_CarboNow4Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EA5142E4BF193F6F00813B /* Pods_CarboNow4Xcode.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		B08550B021B56900009C5618 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B08550B321B5740F009C5618 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		B0D4E80121B66A5B0099C435 /* PreferencesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesCommand.swift; sourceTree = "<group>"; };
+		B0F394EC2206306A0094FB7D /* CarbonNowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonNowModel.swift; sourceTree = "<group>"; };
 		EA548E3BAF23A0E0A66CF0D5 /* Pods_carbon_now_sh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carbon_now_sh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		B010DDAA21B32A3E00971BA8 /* carbon-now-sh */ = {
 			isa = PBXGroup;
 			children = (
+				B0F394EC2206306A0094FB7D /* CarbonNowModel.swift */,
 				B010DDAD21B32A3E00971BA8 /* OpenCommand.swift */,
 				B010DDAF21B32A3E00971BA8 /* Info.plist */,
 				B010DDB021B32A3E00971BA8 /* carbon-now-sh.entitlements */,
@@ -361,6 +364,7 @@
 			files = (
 				B0D4E80221B66A5B0099C435 /* PreferencesCommand.swift in Sources */,
 				B010DDAE21B32A3E00971BA8 /* OpenCommand.swift in Sources */,
+				B0F394EE220630AA0094FB7D /* CarbonNowModel.swift in Sources */,
 				B06C874C21B39676003571D4 /* ExtensionDelegate.swift in Sources */,
 				B08550B221B56900009C5618 /* Utils.swift in Sources */,
 			);

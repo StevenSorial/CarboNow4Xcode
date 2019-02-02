@@ -12,10 +12,11 @@ import AppKit
 class PreferencesCommand: NSObject, XCSourceEditorCommand {
 
   func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
-    NSWorkspace.shared.launchApplication(withBundleIdentifier: "com.steven.CarboNow4Xcode",
-                                         options: .default,
-                                         additionalEventParamDescriptor: nil,
-                                         launchIdentifier: nil)
+    NSWorkspace.shared.launchApplication(
+      withBundleIdentifier: "com.steven.CarboNow4Xcode",
+      options: .default,
+      additionalEventParamDescriptor: nil,
+      launchIdentifier: nil)
     completionHandler(nil)
   }
 }

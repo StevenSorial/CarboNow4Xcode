@@ -18,9 +18,9 @@ class PreferencesVC: NSViewController {
     super.viewDidLoad()
     self.view = PreferencesView(frame: self.view.frame)
     mainView.lineNumbersCheckBox.state =
-      (prefs.object(forKey: lineNumbersPrefKey) as? Bool ?? false) ? .on : .off
+      (UserDefaults.common.object(forKey: UserDefaults.Keys.lineNumbers) as? Bool ?? false) ? .on : .off
     mainView.windowControlsCheckBox.state =
-      (prefs.object(forKey: windowControlsPrefKey) as? Bool ?? true) ? .on : .off
+      (UserDefaults.common.object(forKey: UserDefaults.Keys.windowControls) as? Bool ?? true) ? .on : .off
     mainView.lineNumbersCheckBox.target = self
     mainView.windowControlsCheckBox.target = self
     mainView.lineNumbersCheckBox.action = .preferenceChanged
@@ -29,8 +29,8 @@ class PreferencesVC: NSViewController {
 
   @objc
   func preferenceChanged() {
-    prefs.set(mainView.lineNumbersCheckBox.state == .on, forKey: lineNumbersPrefKey)
-    prefs.set(mainView.windowControlsCheckBox.state == .on, forKey: windowControlsPrefKey)
+    UserDefaults.common.set(mainView.lineNumbersCheckBox.state == .on, forKey: UserDefaults.Keys.lineNumbers)
+    UserDefaults.common.set(mainView.windowControlsCheckBox.state == .on, forKey: UserDefaults.Keys.windowControls)
   }
 }
 
