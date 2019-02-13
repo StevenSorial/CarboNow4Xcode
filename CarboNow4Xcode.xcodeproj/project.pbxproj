@@ -54,7 +54,7 @@
 		60EA5142E4BF193F6F00813B /* Pods_CarboNow4Xcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarboNow4Xcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78940E6AF3A73AC7C891A267 /* Pods-carbon-now-sh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carbon-now-sh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carbon-now-sh/Pods-carbon-now-sh.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4B3C4887D1C8FADC5D6545 /* Pods-CarboNow4Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarboNow4Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarboNow4Xcode/Pods-CarboNow4Xcode.release.xcconfig"; sourceTree = "<group>"; };
-		B010DD8F21B329E900971BA8 /* CarboNow4Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarboNow4Xcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B010DD8F21B329E900971BA8 /* carbon-now-sh for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "carbon-now-sh for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B010DD9221B329E900971BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B010DD9421B329E900971BA8 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
 		B010DD9621B329EB00971BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		B010DD9021B329E900971BA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B010DD8F21B329E900971BA8 /* CarboNow4Xcode.app */,
+				B010DD8F21B329E900971BA8 /* carbon-now-sh for Xcode.app */,
 				B010DDA621B32A3E00971BA8 /* carbon-now-sh.appex */,
 			);
 			name = Products;
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B010DD8E21B329E900971BA8 /* CarboNow4Xcode */ = {
+		B010DD8E21B329E900971BA8 /* carbon-now-sh for Xcode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B010DD9F21B329EB00971BA8 /* Build configuration list for PBXNativeTarget "CarboNow4Xcode" */;
+			buildConfigurationList = B010DD9F21B329EB00971BA8 /* Build configuration list for PBXNativeTarget "carbon-now-sh for Xcode" */;
 			buildPhases = (
 				78D39F230C1F8BFDB8266E59 /* [CP] Check Pods Manifest.lock */,
 				B010DDB821B3353600971BA8 /* ShellScript */,
@@ -183,9 +183,9 @@
 			dependencies = (
 				B010DDB221B32A3E00971BA8 /* PBXTargetDependency */,
 			);
-			name = CarboNow4Xcode;
+			name = "carbon-now-sh for Xcode";
 			productName = "carbon-now-sh";
-			productReference = B010DD8F21B329E900971BA8 /* CarboNow4Xcode.app */;
+			productReference = B010DD8F21B329E900971BA8 /* carbon-now-sh for Xcode.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B010DDA521B32A3E00971BA8 /* carbon-now-sh */ = {
@@ -253,7 +253,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B010DD8E21B329E900971BA8 /* CarboNow4Xcode */,
+				B010DD8E21B329E900971BA8 /* carbon-now-sh for Xcode */,
 				B010DDA521B32A3E00971BA8 /* carbon-now-sh */,
 			);
 		};
@@ -512,14 +512,14 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S6M32W9PH2;
+				DEVELOPMENT_TEAM = 7ZQZ5W893V;
 				INFOPLIST_FILE = CarboNow4Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.steven.CarboNow4Xcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenmagdy.CarboNow4Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -535,14 +535,14 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S6M32W9PH2;
+				DEVELOPMENT_TEAM = 7ZQZ5W893V;
 				INFOPLIST_FILE = CarboNow4Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.steven.CarboNow4Xcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenmagdy.CarboNow4Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -557,7 +557,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S6M32W9PH2;
+				DEVELOPMENT_TEAM = 7ZQZ5W893V;
 				INFOPLIST_FILE = "$(SRCROOT)/carbon-now-sh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,7 +565,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.steven.CarboNow4Xcode.carbon-now-sh";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenmagdy.CarboNow4Xcode.carbon-now-sh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -581,7 +581,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S6M32W9PH2;
+				DEVELOPMENT_TEAM = 7ZQZ5W893V;
 				INFOPLIST_FILE = "$(SRCROOT)/carbon-now-sh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,7 +589,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.steven.CarboNow4Xcode.carbon-now-sh";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenmagdy.CarboNow4Xcode.carbon-now-sh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -609,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B010DD9F21B329EB00971BA8 /* Build configuration list for PBXNativeTarget "CarboNow4Xcode" */ = {
+		B010DD9F21B329EB00971BA8 /* Build configuration list for PBXNativeTarget "carbon-now-sh for Xcode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B010DDA021B329EB00971BA8 /* Debug */,

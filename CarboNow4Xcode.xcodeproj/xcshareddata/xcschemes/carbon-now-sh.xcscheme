@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B010DD8E21B329E900971BA8"
-               BuildableName = "CarboNow4Xcode.app"
-               BlueprintName = "CarboNow4Xcode"
+               BuildableName = "carbon-now-sh for Xcode.app"
+               BlueprintName = "carbon-now-sh for Xcode"
                ReferencedContainer = "container:CarboNow4Xcode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B010DD8E21B329E900971BA8"
-            BuildableName = "CarboNow4Xcode.app"
-            BlueprintName = "CarboNow4Xcode"
+            BuildableName = "carbon-now-sh for Xcode.app"
+            BlueprintName = "carbon-now-sh for Xcode"
             ReferencedContainer = "container:CarboNow4Xcode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B010DD8E21B329E900971BA8"
-            BuildableName = "CarboNow4Xcode.app"
-            BlueprintName = "CarboNow4Xcode"
+            BuildableName = "carbon-now-sh for Xcode.app"
+            BlueprintName = "carbon-now-sh for Xcode"
             ReferencedContainer = "container:CarboNow4Xcode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B010DD8E21B329E900971BA8"
-            BuildableName = "CarboNow4Xcode.app"
-            BlueprintName = "CarboNow4Xcode"
+            BuildableName = "carbon-now-sh for Xcode.app"
+            BlueprintName = "carbon-now-sh for Xcode"
             ReferencedContainer = "container:CarboNow4Xcode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
