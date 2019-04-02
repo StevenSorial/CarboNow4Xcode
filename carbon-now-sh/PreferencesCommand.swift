@@ -13,7 +13,7 @@ class PreferencesCommand: NSObject, XCSourceEditorCommand {
 
   func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
     NSWorkspace.shared.launchApplication(
-      withBundleIdentifier: "com.steven.CarboNow4Xcode",
+      withBundleIdentifier: "com.stevenmagdy.CarboNow4Xcode",
       options: .default,
       additionalEventParamDescriptor: nil,
       launchIdentifier: nil)
