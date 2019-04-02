@@ -36,8 +36,8 @@ class OpenCommand: NSObject, XCSourceEditorCommand {
         let line = lines[lineIndex]
         let isFirstLine = lineIndex == startLine
         let isLastLine = lineIndex == endLine
-        let startColumn = isFirstLine ? String.Index(encodedOffset: range.start.column) : line.startIndex
-        let endColumn = isLastLine ? String.Index(encodedOffset: range.end.column) : line.endIndex
+        let startColumn = isFirstLine ? String.Index(utf16Offset: range.start.column, in: line) : line.startIndex
+        let endColumn = isLastLine ? String.Index(utf16Offset: range.end.column, in: line) : line.endIndex
 
         let singleLineCode = String(line[startColumn..<endColumn])
         singleSelectionCode.append(singleLineCode)
