@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC3E29C743182D42F2BA7D50 /* Pods_carbon_now_sh_for_Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476C7F69E1DE4C838FB344AA /* Pods_carbon_now_sh_for_Xcode.framework */; };
+		B00F6F9A2561441D00A6963C /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00F6F8F256143E400A6963C /* XcodeKit.framework */; };
+		B00F6F9B2561441D00A6963C /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B00F6F8F256143E400A6963C /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B010DD9321B329E900971BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010DD9221B329E900971BA8 /* AppDelegate.swift */; };
 		B010DD9521B329E900971BA8 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010DD9421B329E900971BA8 /* PreferencesVC.swift */; };
 		B010DD9721B329EB00971BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B010DD9621B329EB00971BA8 /* Assets.xcassets */; };
@@ -35,6 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B00F6F9C2561441D00A6963C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B00F6F9B2561441D00A6963C /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B010DDB721B32A3E00971BA8 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +69,7 @@
 		78940E6AF3A73AC7C891A267 /* Pods-carbon-now-sh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carbon-now-sh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carbon-now-sh/Pods-carbon-now-sh.debug.xcconfig"; sourceTree = "<group>"; };
 		8A648F0E240E09946031BF74 /* Pods-carbon-now-sh for Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carbon-now-sh for Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-carbon-now-sh for Xcode/Pods-carbon-now-sh for Xcode.release.xcconfig"; sourceTree = "<group>"; };
 		9C4B3C4887D1C8FADC5D6545 /* Pods-CarboNow4Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarboNow4Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarboNow4Xcode/Pods-CarboNow4Xcode.release.xcconfig"; sourceTree = "<group>"; };
+		B00F6F8F256143E400A6963C /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		B010DD8F21B329E900971BA8 /* carbon-now-sh for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "carbon-now-sh for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B010DD9221B329E900971BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B010DD9421B329E900971BA8 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
@@ -90,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00F6F9A2561441D00A6963C /* XcodeKit.framework in Frameworks */,
 				B010DDA921B32A3E00971BA8 /* Cocoa.framework in Frameworks */,
 				B6D8ADFEDA8F106182B322C8 /* Pods_carbon_now_sh.framework in Frameworks */,
 			);
@@ -149,6 +164,7 @@
 		B010DDA721B32A3E00971BA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B00F6F8F256143E400A6963C /* XcodeKit.framework */,
 				B010DDA821B32A3E00971BA8 /* Cocoa.framework */,
 				60EA5142E4BF193F6F00813B /* Pods_CarboNow4Xcode.framework */,
 				EA548E3BAF23A0E0A66CF0D5 /* Pods_carbon_now_sh.framework */,
@@ -202,6 +218,7 @@
 				B010DDA221B32A3E00971BA8 /* Sources */,
 				B010DDA321B32A3E00971BA8 /* Frameworks */,
 				B010DDA421B32A3E00971BA8 /* Resources */,
+				B00F6F9C2561441D00A6963C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Steven;
 				TargetAttributes = {
 					B010DD8E21B329E900971BA8 = {
@@ -422,6 +439,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -483,6 +501,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -520,13 +539,16 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7ZQZ5W893V;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CarboNow4Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevenmagdy.CarboNow4Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -543,13 +565,16 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7ZQZ5W893V;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CarboNow4Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevenmagdy.CarboNow4Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -566,7 +591,9 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7ZQZ5W893V;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/carbon-now-sh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +601,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenmagdy.CarboNow4Xcode.carbon-now-sh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -590,7 +618,9 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 7ZQZ5W893V;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/carbon-now-sh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -598,6 +628,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenmagdy.CarboNow4Xcode.carbon-now-sh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
